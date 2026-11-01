@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"qwe\startup_stm32f103xb.o"
+"qwe\main.o"
+"qwe\gpio.o"
+"qwe\i2c.o"
+"qwe\usart.o"
+"qwe\stm32f1xx_it.o"
+"qwe\stm32f1xx_hal_msp.o"
+"qwe\radar_parse.o"
+"qwe\stm32f1xx_hal_gpio_ex.o"
+"qwe\stm32f1xx_hal_i2c.o"
+"qwe\stm32f1xx_hal.o"
+"qwe\stm32f1xx_hal_rcc.o"
+"qwe\stm32f1xx_hal_rcc_ex.o"
+"qwe\stm32f1xx_hal_gpio.o"
+"qwe\stm32f1xx_hal_dma.o"
+"qwe\stm32f1xx_hal_cortex.o"
+"qwe\stm32f1xx_hal_pwr.o"
+"qwe\stm32f1xx_hal_flash.o"
+"qwe\stm32f1xx_hal_flash_ex.o"
+"qwe\stm32f1xx_hal_exti.o"
+"qwe\stm32f1xx_hal_uart.o"
+"qwe\system_stm32f1xx.o"
+"qwe\oled.o"
+--library_type=microlib --strict --scatter "qwe\qwe.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "qwe.map" -o qwe\qwe.axf
